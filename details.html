@@ -40,7 +40,7 @@
             fetch("https://api.pexels.com/v1/photos/" + id, {
                 method: "GET",
                 headers: {
-                    Authorization: "Bearer 563492ad6f9170000100000185deb760c4be4516ad5a6aaa973eef7c"
+                    Authorization: "Bearer [YOUR API KEY]"
                 }
             }).then(response => response.json())
                 .then((picture) => {
@@ -74,25 +74,6 @@
 
                     body.style.backgroundColor = picture.avg_color
                     h1.style.color = "#fff"
-
-
-
-
-
-                    // photos.forEach(photo => {
-                    //     const col = document.createElement("div")
-                    //     col.classList.add("col-12", "col-md-3", "mb-3", "d-flex")
-
-                    //     img.classList.add("img-fluid")
-                    //     img.style.objectFit = "cover"
-
-                    //     img.src = photo.src.large
-
-                    //     col.appendChild(img)
-                    //     row.appendChild(col)
-
-                    // })
-
                 })
 
         }

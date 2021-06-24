@@ -41,7 +41,7 @@
             fetch("https://api.pexels.com/v1/search?query=" + query, {
                 method: "GET",
                 headers: {
-                    Authorization: "Bearer 563492ad6f9170000100000185deb760c4be4516ad5a6aaa973eef7c"
+                    Authorization: "Bearer [YOUR API KEY]"
                 }
             }).then(response => response.json())
                 .then(({ photos }) => {
@@ -68,9 +68,7 @@
                         row.appendChild(col)
 
                     })
-
                 })
-
         }
     </script>
 </body>
